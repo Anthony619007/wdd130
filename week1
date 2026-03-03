@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favourite Ghanaian Dish</title>
+    </head>
+    <body>
+        <h1> Favourite Food</h1>
+        <p>Here is a list of some of my Ghanaian Dishes
+            1. Ghanaian cuisine is built around starchy staples like fufu, kokonte,
+            banku, and emotuo. They’re always served with a light soup or stew
+            along with a protein. Common proteins include goat, beef, chicken,
+            pork, lamb, snails, and fish. A number of ingredients are commonly
+            used, including plain rice, tomatoes, plantains, peppers, black-eyed peas
+            peas, onions, ginger, vegetable oil and palm oil. 
+            
+            <img src="images/fish.jpg" alt="Ghanaian Dish">
+            <img src=" images/beef.jpg" alt="Ghanaian Dish">
+            <img src=" images/banku.jpg" alt="Ghanaian Dish">
+            <img src=" images/plain rice.jpg" alt="Ghanaian Dish">
+            <img src=" images/fufu.jpg" alt="Ghanaian Dish">
+        </body>
+        </html>
