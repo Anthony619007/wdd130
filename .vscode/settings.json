@@ -56,5 +56,12 @@
   "chat.agent.enabled": false,
   "chat.commandCenter.enabled": false,
   "inlineChat.accessibleDiffView": "off",
-  "terminal.integrated.initialHint": false
+  "terminal.integrated.initialHint": false,
+  "github.copilot.chat.agent.currentEditorContext.enabled": false,
+  "github.copilot.chat.backgroundAgent.enabled": false,
+  "github.copilot.chat.cloudAgent.enabled": false,
+  "github.copilot.chat.organizationCustomAgents.enabled": false,
+  "github.copilot.chat.organizationInstructions.enabled": false,
+  "github.copilot.chat.customInstructionsInSystemMessage": false,
+  "github.copilot.chat.codeGeneration.useInstructionFiles": false
 }
