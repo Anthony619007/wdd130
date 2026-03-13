@@ -1,16 +1,262 @@
-< !DOCTYPE html > <html lang="en-US" > <head > <meta charset="utf-8" > <meta name="viewport" content="width=device-width, initial-scale=1.0" > <title > Anthony Anusiem | Ghana Heritage</title > <meta name="description" content="Anthony Anusiem's personal page celebrating Ghanaian culture and heritage" > <meta name="author" content="Anthony Anusiem" > <link rel="stylesheet" href="styles/styles.css" > </head > <body > <header class="main-header" > <nav class="nav main-nav" > <ul > <li > <a href="#" > HOME</a > </li > <li > <a href="wwr/" > RAFTING</a > </li > <li > <a href="#culture" > CULTURE</a > </li > </ul > </nav > <h1 class="band-name band-name-large" > Anthony Anusiem</h1 > </header > <main > <section class="content-section container" > <h2 class="section-header" > WDD 130 | Web Fundamentals</h2 > <div class="about-content" > <img src="images/profile.jpg" alt="Anthony Anusiem profile" class="about-band-image" > <p > Hello ! My name is Anthony Anusiem and I am from Accra,
-Ghana. I am passionate about web development and creating beautiful digital experiences that showcase the rich cultural heritage of West Africa. When I'm not coding, you can find me exploring local markets, listening to highlife music, or learning about traditional Ghanaian craftsmanship. This page is part of my WDD 130 course where I' m building skills in HTML,
-CSS,
-and web design.</p > <p > Ghana,
-known as the "Gateway to Africa," has a vibrant culture that inspires my work. From the colorful kente cloth to the rhythmic beats of drumming ceremonies,
-there's always something new to discover. I hope to use my web development skills to tell stories about my homeland and connect people with its beauty.</p>
- </div > </section > <section class="content-section container" id="culture" > <h2 class="section-header" > Accra,
-Ghana</h2 > <div class="culture-content" > <img src="images/accra.jpg" alt="Accra cityscape" class="culture-image" > <p > Accra is the vibrant capital city of Ghana,
-where modern skyscrapers stand alongside colonial-era buildings and traditional markets. The city pulses with energy - from the bustling Makola Market to the peaceful shores of Labadi Beach. Accra is also the heart of Ghana's music scene, where highlife and hiplife genres have been popularized by legends like E.T. Mensah, Amakye Dede, and contemporary artists like Sarkodie. The city' s rich history includes landmarks like Independence Square,
-Kwame Nkrumah Mausoleum,
-and the historic Jamestown lighthouse. With its warm hospitality,
-delicious street food like kelewele and jollof rice,
-and thriving arts scene,
-Accra offers visitors an authentic taste of West African culture.</p > </div > </section > </main > <aside class="content-section container" > <h3 class="section-header" > Did You Know?</h3 > <p > Ghana was the first sub-Saharan African country to gain independence from colonial rule in 1957,
-led by the visionary Kwame Nkrumah. The country's name means "Warrior King" in the Soninke language, and its rich traditions include the colorful celebration of festivals like Homowo, Aboakyer, and the famous Panafest. Ghanaian cuisine features delicious dishes like fufu, banku, and groundnut soup that reflect the country' s agricultural abundance.</p > </aside > <footer class="main-footer" > <div class="container main-footer-container" > <h3 class="band-name" > ©️2026 🏅 Anthony Anusiem 🏅 Accra,
-Ghana</h3 > <ul class="nav footer-nav" > <li > <a href="#" target="_blank" > <img src="images/facebook.png" alt="Facebook" > </a > </li > <li > <a href="#" target="_blank" > <img src="images/instagram.png" alt="Instagram" > </a > </li > <li > <a href="#" target="_blank" > <img src="images/twitter.png" alt="Twitter" > </a > </li > </ul > </div > </footer > </body > </html >
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+        url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-color: #f9f9f9;
+}
+
+/* Navigation styling */
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em 1em;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    padding: 10px 0;
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 4px;
+}
+
+/* Header styling */
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("Images/ghana-header.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 60px;
+    margin-bottom: 30px;
+}
+
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 3em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.band-name-large {
+    font-size: 5em;
+    margin-top: 30px;
+}
+
+/* Content sections */
+.content-section {
+    margin: 2em auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #FFD700;
+    padding-bottom: 15px;
+}
+
+/* Image styling */
+.about-band-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 0 25px 15px 0;
+    border-radius: 50%;
+    border: 4px solid #FFD700;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.culture-image {
+    float: right;
+    width: 300px;
+    height: auto;
+    margin: 0 0 15px 25px;
+    border: 3px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Paragraph styling */
+p {
+    padding: 10px;
+    line-height: 1.8;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.about-content p:first-of-type {
+    margin-top: 0;
+}
+
+/* Aside styling */
+aside {
+    background-color: #f0f8ff;
+    border-left: 5px solid #FFD700;
+    margin: 30px auto;
+}
+
+aside p {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #444;
+    background-color: rgba(255, 215, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Footer styling */
+.main-footer {
+    background-color: #006B3F;
+    /* Ghana flag green */
+    color: white;
+    padding: 1em 0;
+    margin-top: 40px;
+    border-top: 3px solid #FFD700;
+    /* Ghana flag yellow */
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-footer-container h3 {
+    margin: 10px 0;
+    color: white;
+    font-size: 1.2em;
+}
+
+.footer-nav {
+    margin: 10px 0;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footer-nav img:hover {
+    transform: scale(1.2);
+}
+
+/* Button styling (optional - for future use) */
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #006B3F;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #FFD700;
+    color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .band-name-large {
+        font-size: 3em;
+    }
+
+    .about-band-image,
+    .culture-image {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .culture-image {
+        float: none;
+        margin: 0 auto 20px;
+    }
+
+    .main-nav li {
+        padding: 0 2%;
+    }
+
+    .main-footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-nav {
+        margin-top: 15px;
+    }
+}
