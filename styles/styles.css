@@ -38,7 +38,7 @@ main {
 }
 
 p {
-    padding: 0;
+    padding: 10px;
 }
 
 aside {
@@ -47,7 +47,7 @@ aside {
     border: 1px solid #ccc;
     padding: 15px;
     background-color: #f8f8f8;
-    color: cornflowerblue;
+    color: black;
     text-align: center justify;
 }
 
