@@ -1,3 +1,4 @@
+/* Navigation styling */
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -6,51 +7,38 @@ nav {
 nav a {
     color: white;
     display: block;
-    padding: 10px;
+    padding: 20px;
 }
 
+/* Main content styling */
+main {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* Heading styling */
 h1 {
-    color: steelblue display: black;
-    Padding: 10px;
-    color: rgb(117, 4, 4);
-
-    text-align: center justify;
+    color: darkblue;
 }
 
-img {
+/* Main image styling */
+main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
-    box-shadow: 0 0 30px yellowgreen
-}
-
-p {
-    padding: 10px;
-    color: black;
-    display: block;
-}
-
-main {
-    max-width: 840px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 
-p {
-    padding: 10px;
-}
-
+/* Aside styling */
 aside {
-    max-width: 840px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    padding: 15px;
+    width: 20rem;
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
     background-color: #f8f8f8;
-    color: rgb(117, 4, 4);
-    text-align: center justify;
+    color: #333;
+    text-align: center;
 }
 
 aside img {
@@ -58,10 +46,14 @@ aside img {
     height: auto;
 }
 
+/* Paragraph styling */
+p {
+    padding: 0;
+}
+
+/* Footer styling */
 footer {
-    max-width: 840px;
-    margin: 20px auto;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
     text-align: center;
-    border-top: 4px solid #080808;
-    padding-top: 20px;
 }
