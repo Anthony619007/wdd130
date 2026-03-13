@@ -7,12 +7,12 @@ nav {
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 10px;
 }
 
 /* Heading styling */
 h1 {
-    color: darkblue;
+    color: steelblue
 }
 
 /* Image styling - exactly as shown in the activity */
@@ -29,10 +29,16 @@ p {
     padding: 10px;
 }
 
-/* Optional: Add some basic layout for better presentation */
 main {
     max-width: 840px;
-    margin: 0 auto;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+p {
+    padding: 0;
 }
 
 aside {
@@ -41,6 +47,8 @@ aside {
     border: 1px solid #ccc;
     padding: 15px;
     background-color: #f8f8f8;
+    color: cornflowerblue;
+    text-align: center;
 }
 
 aside img {
