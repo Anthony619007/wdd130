@@ -1,10 +1,10 @@
 nav {
-    background-color: darkblue;
+    background-color: navajowhite;
     padding: 10px;
 }
 
 nav a {
-    color: rgb(206, 154, 154);
+    color: white;
     display: block;
     padding: 10px;
 }
@@ -13,6 +13,7 @@ h1 {
     color: steelblue display: black;
     Padding: 10px;
     color: rgb(117, 4, 4);
+
     text-align: center justify;
 }
 
