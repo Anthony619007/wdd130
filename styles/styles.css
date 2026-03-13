@@ -44,9 +44,9 @@ p {
 aside {
     max-width: 840px;
     margin: 20px auto;
-    border: 1px solid #ccc;
+    border: 1px solid #0e0d0d;
     padding: 15px;
-    background-color: #f8f8f8;
+    background-color: #0c0b0b;
     color: black;
     text-align: center justify;
 }
