@@ -1,15 +1,3 @@
-<link rel="stylesheet" href="styles/rafting.css" > :root {
-    --primary-color: #1a4d3e;
-    --secondary-color: #fef9fe;
-    --accent1-color: #2c3e50;
-    --accent2-color: #f9e79f;
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: "Arial", "Helvetica", sans-serif;
-    --text-light: #ffffff;
-    --text-dark: #1a2a2f;
-
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -17,8 +5,8 @@
 }
 
 body {
-    font-family: var(--body-font);
-    color: var(--text-dark);
+    font-family: "Arial", "Helvetica", sans-serif;
+    color: #1a2a2f;
     background-color: #fef9e8;
     line-height: 1.5;
 }
@@ -32,14 +20,14 @@ footer {
 }
 
 header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
+    background-color: #1a4d3e;
+    color: #f9e79f;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    border-bottom: 4px solid var(--secondary-color);
+    border-bottom: 4px solid #fef9fe;
 }
 
 .logo-container img {
@@ -54,7 +42,7 @@ header nav {
 }
 
 header nav a {
-    color: var(--accent2-color);
+    color: #f9e79f;
     text-decoration: none;
     font-weight: bold;
     margin-left: 1.5rem;
@@ -63,7 +51,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: var(--secondary-color);
+    color: #fef9fe;
     text-decoration: underline;
 }
 
@@ -89,11 +77,11 @@ header nav a:hover {
     width: 100%;
     padding: 1rem;
     text-align: center;
-    font-family: var(--heading-font);
+    font-family: "Times New Roman", "Georgia", serif;
     font-size: 2.5rem;
     letter-spacing: 2px;
     background-color: rgba(44, 62, 80, 0.85);
-    color: var(--text-light);
+    color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     margin: 0;
     z-index: 2;
@@ -105,7 +93,7 @@ header nav a:hover {
     left: 20px;
     right: 20px;
     background-color: rgba(26, 77, 62, 0.9);
-    color: var(--text-light);
+    color: #ffffff;
     padding: 1.2rem;
     border-radius: 12px;
     backdrop-filter: blur(2px);
@@ -126,7 +114,7 @@ header nav a:hover {
     height: auto;
     margin: 0 0 12px 20px;
     border-radius: 12px;
-    border: 2px solid var(--accent2-color);
+    border: 2px solid #f9e79f;
     box-shadow: 0 2px 8px rgba(202, 71, 71, 0.2);
 }
 
@@ -139,11 +127,11 @@ header nav a:hover {
 }
 
 .history h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+    font-family: "Times New Roman", "Georgia", serif;
+    color: #1a4d3e;
     font-size: 1.8rem;
     text-align: center;
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: 3px solid #fef9fe;
     display: inline-block;
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
@@ -162,7 +150,7 @@ header nav a:hover {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: var(--text-dark);
+    color: #1a2a2f;
 }
 
 .history-content img {
@@ -170,7 +158,7 @@ header nav a:hover {
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid var(--accent2-color);
+    border: 2px solid #f9e79f;
 }
 
 .adventure {
@@ -179,12 +167,12 @@ header nav a:hover {
 }
 
 .adventure h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+    font-family: "Times New Roman", "Georgia", serif;
+    color: #1a4d3e;
     font-size: 1.8rem;
     text-align: center;
     margin-bottom: 2rem;
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: 3px solid #fef9fe;
     display: inline-block;
     width: auto;
 }
@@ -218,20 +206,20 @@ header nav a:hover {
     height: 200px;
     object-fit: cover;
     display: block;
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: 3px solid #fef9fe;
 }
 
 .gallery figcaption {
     padding: 0.75rem 0.5rem;
     font-weight: bold;
-    color: var(--primary-color);
+    color: #1a4d3e;
     background-color: #fff;
     font-size: 0.9rem;
 }
 
 footer {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
+    background-color: #1a4d3e;
+    color: #f9e79f;
     padding: 1.5rem 2rem;
     display: flex;
     flex-wrap: wrap;
@@ -283,18 +271,18 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: var(--heading-font);
+    font-family: "Times New Roman", "Georgia", serif;
     font-weight: bold;
 }
 
 h2 {
-    color: var(--primary-color);
+    color: #1a4d3e;
     margin-bottom: 0.75rem;
 }
 
 h3,
 h4 {
-    color: var(--accent1-color);
+    color: #2c3e50;
 }
 
 p {
@@ -303,8 +291,8 @@ p {
 }
 
 a.btn {
-    background-color: var(--secondary-color);
-    color: var(--text-dark);
+    background-color: #fef9fe;
+    color: #1a2a2f;
     padding: 0.6rem 1.2rem;
     border-radius: 30px;
     text-decoration: none;
@@ -385,10 +373,10 @@ img {
 }
 
 .hero article p {
-    color: var(--text-light);
+    color: #ffffff;
 }
 
 .hero article a {
-    color: var(--accent2-color);
+    color: #f9e79f;
     text-decoration: underline;
 }
