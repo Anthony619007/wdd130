@@ -129,6 +129,7 @@ nav ul li a:hover {
     font-size: 1rem;
     line-height: 1.6;
     overflow: hidden;
+    color: var(--white);
 }
 
 .hero article::after {
@@ -173,6 +174,7 @@ nav ul li a:hover {
     flex: 1;
     min-width: 250px;
     line-height: 1.8;
+    color: var(--text-color);
 }
 
 .history-content img {
@@ -252,6 +254,7 @@ footer {
 footer p {
     margin: 0;
     font-size: 0.9rem;
+    color: var(--white);
 }
 
 .socialmedia {
@@ -382,5 +385,29 @@ footer p {
 
 .btn-secondary:hover {
     background-color: var(--accent-color);
+    color: var(--white);
+}
+
+a:focus,
+button:focus,
+.btn:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+p,
+li,
+span,
+.text-content {
+    color: var(--text-color);
+}
+
+.dark-bg {
+    background-color: var(--dark-color);
+    color: var(--white);
+}
+
+.dark-bg p,
+.dark-bg a:not(.btn) {
     color: var(--white);
 }
