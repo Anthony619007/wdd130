@@ -1,5 +1,4 @@
-Here is the complete CSS file that styles the updated About Us page with a consistent,
-responsive design. ```css:root {
+:root {
     --primary-color: #1e6f5c;
     --secondary-color: #f9b23f;
     --accent-color: #e76f51;
@@ -375,7 +374,15 @@ span,
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
-/* Tablet view (max-width: 1024px) */
+/* Large desktop (max-width: 1200px) - adjust gallery spacing */
+@media (max-width: 1200px) {
+    .gallery {
+        gap: var(--spacing-md);
+        padding: 0 var(--spacing-md);
+    }
+}
+
+/* Tablet view (max-width: 1024px) - show 3 columns for gallery */
 @media (max-width: 1024px) {
     .gallery {
         grid-template-columns: repeat(3, 1fr);
@@ -384,6 +391,13 @@ span,
 
     .history-content {
         gap: var(--spacing-lg);
+    }
+}
+
+/* Medium tablet view (max-width: 900px) - show 2 columns for gallery */
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -486,13 +500,6 @@ span,
     }
 }
 
-/* Medium tablet view (max-width: 900px) */
-@media (max-width: 900px) and (min-width: 769px) {
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 /* Ensure consistent spacing for history image on all devices */
 @media (min-width: 769px) and (max-width: 1024px) {
     .history-content {
@@ -504,4 +511,54 @@ span,
     }
 }
 
-```
+/* Additional styling for figure elements to ensure consistency */
+.gallery figure:last-child {
+    margin-bottom: 0;
+}
+
+/* Optional: Add a subtle animation for gallery items */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.gallery figure {
+    animation: fadeInUp 0.5s ease-out forwards;
+    animation-delay: calc(var(--order, 0) * 0.1s);
+}
+
+/* Apply animation delay to each figure for staggered effect */
+.gallery figure:nth-child(1) {
+    --order: 1;
+}
+
+.gallery figure:nth-child(2) {
+    --order: 2;
+}
+
+.gallery figure:nth-child(3) {
+    --order: 3;
+}
+
+.gallery figure:nth-child(4) {
+    --order: 4;
+}
+
+.gallery figure:nth-child(5) {
+    --order: 5;
+}
+
+/* Ensure proper focus states for interactive elements */
+.gallery figure:focus-within {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-hover);
+}
