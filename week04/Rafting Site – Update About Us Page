@@ -26,6 +26,7 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <div class="hero">
             <img src="images/rafting-adventure.jpg" alt="Rafting adventure on wild river"
@@ -69,23 +70,35 @@
             <h2>Adventure Awaits You!</h2>
             <div class="gallery">
                 <figure>
-                    <img src="images/rafting-through-rapid.avif" alt="Rafting through rapids"
-                      width="400" height="300">
+                    <img src="images/rafting-through-rapid.avif"
+                      alt="Rafting through Rush Hour Rapids" width="400" height="300">
                     <figcaption>Rush Hour Rapids</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/rafting-south.avif" alt="Rafting on South Fork" width="400"
-                      height="300">
+                    <img src="images/rafting-south.avif" alt="Rafting on South Fork Fury"
+                      width="400" height="300">
                     <figcaption>South Fork Fury</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/group-rafting.avif" alt="Group rafting on big water"
+                    <img src="images/group-rafting.avif" alt="Group rafting on Big Water Blast"
                       width="400" height="300">
                     <figcaption>Big Water Blast</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Grand-Canyon-river.jpg" alt="Canyon Run Rapids adventure"
+                      width="400" height="300">
+                    <figcaption>Canyon Run</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/caption.jpg" alt="Twilight Torrent scenic rafting" width="400"
+                      height="300">
+                    <figcaption>Twilight Torrent</figcaption>
                 </figure>
             </div>
         </section>
     </main>
+
+
     <footer>
         <p>© 2026 Wild Waters Rafting | Created by Anthony Anusiem</p>
         <nav class="socialmedia">
