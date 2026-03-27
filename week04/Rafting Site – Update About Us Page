@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Wild Waters Rafting</title>
+    <meta name="description"
+      content="Discover Wild Waters Rafting's thrilling whitewater adventures, expert guides, and unforgettable river experiences. Book your rafting trip today!">
+    <meta name="author" content="Anthony Anusiem">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/wild-waters-logo.png" alt="Wild Waters Rafting Logo" width="80"
+              height="80">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="images/rafting-adventure.jpg" alt="Rafting adventure on wild river"
+              width="1200" height="600">
+            <h1>Wild Waters Rafting</h1>
+            <article>
+                <h2>Our Adventure Story</h2>
+                <img src="images/happy-rafters.avif" alt="Happy rafters enjoying the river"
+                  width="200" height="150">
+                <p>Experience the thrill of untamed rivers, the beauty of nature, and the joy of
+                    shared adventure. At Wild Waters, we believe that every rapid tells a story and
+                    every journey creates unforgettable bonds. Our expert guides, top-notch
+                    equipment, and passion for the outdoors ensure your adventure is safe, exciting,
+                    and truly wild.</p>
+            </article>
+        </div>
+
+        <section class="history">
+            <h2>History</h2>
+            <div class="history-content">
+                <p>Founded in 2010 by passionate river enthusiasts, Wild Waters Rafting began with a
+                    single raft and a dream to share the exhilarating experience of whitewater
+                    rafting. What started as weekend trips on the South Fork river quickly grew into
+                    a full-fledged adventure company. Over the years, we have expanded our fleet,
+                    trained a team of the most skilled and safety-conscious guides, and earned a
+                    reputation for delivering exceptional experiences. Our commitment to
+                    environmental stewardship and community engagement remains at the core of our
+                    operations.</p>
+                <img src="images/early-days.avif" alt="Early days of Wild Waters Rafting"
+                  width="300" height="200">
+                <p>Today, we operate on multiple rivers across the region, offering trips for
+                    beginners to seasoned adventurers. Our legacy is built on countless smiles,
+                    shared laughter, and the unwavering belief that the river is for everyone. We
+                    continue to innovate while preserving the wild spirit that inspired our
+                    founders. Join us as we write the next chapter of our story—one rapid at a time.
+                </p>
+            </div>
+        </section>
+
+        <section class="adventure">
+            <h2>Adventure Awaits You!</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="images/rafting-through-rapid.avif" alt="Rafting through rapids"
+                      width="400" height="300">
+                    <figcaption>Rush Hour Rapids</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting-south.avif" alt="Rafting on South Fork" width="400"
+                      height="300">
+                    <figcaption>South Fork Fury</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/group-rafting.avif" alt="Group rafting on big water"
+                      width="400" height="300">
+                    <figcaption>Big Water Blast</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Wild Waters Rafting | Created by Anthony Anusiem</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook" width="32" height="32">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter" width="32" height="32">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram" width="32" height="32">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
