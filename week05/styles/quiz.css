@@ -1,8 +1,3 @@
-/* ============================================
-   EXACT QUIZ STYLES - Based on Example Picture
-   ============================================ */
-
-/* RESET & BASE - Clean background like the picture */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +14,6 @@ body {
     padding: 2rem;
 }
 
-/* MAIN QUIZ CARD - Simple white background, subtle border */
 .quiz-card {
     max-width: 650px;
     width: 100%;
@@ -29,7 +23,6 @@ body {
     overflow: hidden;
 }
 
-/* HEADER - Simple with no fancy colors, just text */
 .quiz-header {
     padding: 1.75rem 2rem 0.5rem 2rem;
 }
@@ -43,17 +36,14 @@ body {
     line-height: 1.3;
 }
 
-/* FORM CONTAINER */
 .quiz-form {
     padding: 1rem 2rem 2rem 2rem;
 }
 
-/* INDIVIDUAL QUESTION BLOCKS */
 .question {
     margin-bottom: 1.5rem;
 }
 
-/* QUESTION TEXT - Plain, bold, matches picture */
 .question-text {
     font-weight: 600;
     font-size: 1rem;
@@ -62,7 +52,6 @@ body {
     line-height: 1.4;
 }
 
-/* CODE BLOCK - For the margin declaration */
 .code-block {
     background: #f3f4f6;
     padding: 0.6rem 1rem;
@@ -74,7 +63,6 @@ body {
     border-left: 3px solid #6b7280;
 }
 
-/* INPUT FIELDS - Simple border, matches picture style */
 input[type="text"],
 select {
     width: 100%;
@@ -89,21 +77,18 @@ select {
     color: #111827;
 }
 
-/* Focus state - subtle blue border like typical browser */
 input[type="text"]:focus,
 select:focus {
     border-color: #3b82f6;
     box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
 }
 
-/* Placeholder styling - matches the blank input look */
 input::placeholder {
     color: #9ca3af;
     font-weight: 400;
     font-size: 0.85rem;
 }
 
-/* SELECT DROPDOWN - Simple arrow */
 select {
     appearance: none;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
@@ -114,7 +99,6 @@ select {
     padding-right: 2rem;
 }
 
-/* SUBMIT BUTTON - Dark, rounded, centered exactly like picture */
 .submit-btn {
     background: #1f2937;
     color: white;
@@ -141,7 +125,6 @@ select {
     transform: scale(0.98);
 }
 
-/* RESPONSIVE - Maintains proportions on smaller screens */
 @media (max-width: 550px) {
     body {
         padding: 1rem;
