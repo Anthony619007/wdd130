@@ -1,5 +1,5 @@
-Here is a complete HTML document that creates a valid online quiz form about HTML and CSS, meeting
-all the requirements you specified.
+Here is an HTML document that recreates the quiz layout exactly as shown in the example image, with
+the four questions and styling that matches the visual design.
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +7,7 @@ all the requirements you specified.
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML & CSS Knowledge Quiz</title>
+    <title>HTML and CSS Quiz</title>
     <style>
         * {
             margin: 0;
@@ -16,251 +16,245 @@ all the requirements you specified.
         }
 
         body {
-            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            background: linear-gradient(135deg, #f5f7fc 0%, #e9eef5 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f0f2f5;
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 2rem 1rem;
+            padding: 2rem;
         }
 
-        /* QUIZ CARD CONTAINER — single column, uniform layout */
-        .quiz-container {
-            max-width: 780px;
+        /* QUIZ CARD */
+        .quiz-card {
+            max-width: 720px;
             width: 100%;
-            background: #ffffff;
-            border-radius: 2rem;
-            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.2);
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
             overflow: hidden;
-            transition: all 0.2s ease;
         }
 
-        /* HEADER SECTION */
+        /* HEADER with light border-bottom like example */
         .quiz-header {
-            background: #1e2a3e;
-            padding: 1.8rem 2rem;
-            border-bottom: 5px solid #f4b942;
+            padding: 1.5rem 2rem 0.75rem 2rem;
+            border-bottom: 2px solid #e9ecef;
         }
 
         .quiz-header h1 {
-            font-size: 1.9rem;
-            letter-spacing: -0.3px;
-            color: white;
+            font-size: 1.8rem;
             font-weight: 600;
+            color: #1a2c3e;
+            letter-spacing: -0.3px;
             margin: 0;
-            line-height: 1.2;
-            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
         }
 
-        .quiz-header p {
-            color: #cbd5e6;
-            margin-top: 0.5rem;
-            font-size: 0.95rem;
-        }
-
-        /* FORM STYLES — single column layout */
+        /* FORM CONTENT */
         .quiz-form {
-            padding: 2rem 2rem 2rem 2rem;
-            background: #fff;
+            padding: 1.5rem 2rem 2rem 2rem;
         }
 
         /* each question block */
-        .question-group {
+        .question {
             margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid #e2e8f0;
         }
 
-        .question-group:last-of-type {
-            border-bottom: none;
-            margin-bottom: 1.8rem;
-        }
-
-        /* label styling: consistent block style */
-        .question-label {
-            display: block;
-            font-weight: 700;
-            font-size: 1.1rem;
-            color: #0f2b3d;
-            margin-bottom: 0.75rem;
-            background: #f8fafc;
-            padding: 0.5rem 0.75rem;
-            border-radius: 1rem;
-            border-left: 5px solid #f4b942;
-        }
-
-        /* inputs, select, textarea — uniform width and spacing */
-        input,
-        select,
-        textarea {
-            width: 100%;
-            padding: 0.85rem 1rem;
+        /* question text style */
+        .question-text {
+            font-weight: 600;
             font-size: 1rem;
+            color: #1e2f3f;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+
+        /* code snippet styling (for margin question) */
+        .code-block {
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 0.75rem 1rem;
+            font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+            font-size: 0.9rem;
+            margin: 0.75rem 0 0.75rem 0;
+            border-radius: 10px;
+            color: #2c3e50;
+        }
+
+        /* input styling to match clean example look */
+        input,
+        select {
+            width: 100%;
+            padding: 0.7rem 1rem;
+            font-size: 0.95rem;
             font-family: inherit;
-            border: 1.5px solid #cbd5e1;
-            border-radius: 1rem;
-            background-color: #fff;
-            transition: 0.2s;
+            border: 1.5px solid #d4dce4;
+            border-radius: 14px;
+            background: #ffffff;
+            transition: all 0.2s ease;
             outline: none;
-            color: #0f172a;
+            color: #1f2f3e;
         }
 
         input:focus,
-        select:focus,
-        textarea:focus {
-            border-color: #f4b942;
-            box-shadow: 0 0 0 3px rgba(244, 185, 66, 0.2);
+        select:focus {
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
         }
 
-        /* specific adjustments for number input spinner */
-        input[type="number"] {
-            -moz-appearance: textfield;
+        /* placeholder styling */
+        input::placeholder {
+            color: #adb5bd;
+            font-weight: 400;
         }
 
-        input[type="number"]::-webkit-inner-spin-button,
-        input[type="number"]::-webkit-outer-spin-button {
-            opacity: 0.5;
-        }
-
-        textarea {
-            resize: vertical;
-            min-height: 95px;
-            line-height: 1.5;
+        /* small helper text or hint line (like blank line spacing) */
+        .question-spacer {
+            margin-top: 0.25rem;
         }
 
         /* submit button */
         .submit-btn {
-            background: #1e2a3e;
+            background: #1e2f3f;
             color: white;
             border: none;
-            padding: 0.9rem 1.8rem;
-            font-size: 1.1rem;
+            padding: 0.85rem 1.5rem;
+            font-size: 1rem;
             font-weight: 600;
-            border-radius: 3rem;
+            border-radius: 40px;
             cursor: pointer;
             transition: 0.2s;
             width: 100%;
-            max-width: 260px;
+            max-width: 200px;
             display: block;
-            margin: 1.5rem auto 0.5rem auto;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-            letter-spacing: 0.5px;
+            margin: 2rem auto 0.5rem auto;
+            letter-spacing: 0.3px;
+            font-family: inherit;
         }
 
         .submit-btn:hover {
-            background: #f4b942;
-            color: #1e2a3e;
-            transform: translateY(-2px);
-            box-shadow: 0 12px 18px -8px rgba(0, 0, 0, 0.2);
+            background: #2c4b6e;
+            transform: translateY(-1px);
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
         }
 
-        /* small helper: hint text */
-        .hint-text {
-            font-size: 0.75rem;
-            color: #5b6e8c;
-            margin-top: 0.4rem;
-            margin-left: 0.5rem;
+        /* subtle line between questions? not required, but clean */
+        hr {
+            margin: 1.5rem 0;
+            border: 0;
+            height: 1px;
+            background: #eef2f6;
+        }
+
+        /* dropdown arrow consistent */
+        select {
+            appearance: none;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1rem;
         }
 
         /* responsive */
         @media (max-width: 550px) {
-            .quiz-form {
-                padding: 1.5rem;
+            .quiz-card {
+                margin: 0;
+            }
+
+            .quiz-header {
+                padding: 1.25rem 1.25rem 0.5rem 1.25rem;
             }
 
             .quiz-header h1 {
-                font-size: 1.6rem;
+                font-size: 1.5rem;
             }
 
-            .question-label {
-                font-size: 1rem;
+            .quiz-form {
+                padding: 1.25rem;
+            }
+
+            .submit-btn {
+                max-width: 100%;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="quiz-container">
+    <div class="quiz-card">
         <div class="quiz-header">
-            <h1>📝 HTML & CSS Mastery Quiz</h1>
-            <p>Test your knowledge of web fundamentals — fill in the blanks, short answers, and
-                more.</p>
+            <h1>Basic HTML and CSS Quiz</h1>
         </div>
         <div class="quiz-form">
-            <!-- The quiz form: method can be post/get, but we keep it neutral. 
-         For demonstration, action="#" prevents actual server submit but keeps HTML valid -->
             <form action="#" method="post" id="quizForm">
-                <!-- QUESTION 1: text input (fill in the blank) -->
-                <div class="question-group">
-                    <label for="q1" class="question-label">📌 1. What does CSS stand for?</label>
-                    <input type="text" id="q1" name="q1" placeholder="Type your answer here..."
+                <!-- Question 1: What does the acronym CSS stand for? -->
+                <div class="question">
+                    <div class="question-text">1. What does the acronym CSS stand for?</div>
+                    <input type="text" id="q1" name="q1" placeholder="Your answer"
                       autocomplete="off">
-                    <div class="hint-text">Hint: Cascading ___ ___ (three words)</div>
+                    <div class="question-spacer"></div>
                 </div>
 
-                <!-- QUESTION 2: textarea (short answer) -->
-                <div class="question-group">
-                    <label for="q2" class="question-label">✍️ 2. Briefly explain the difference
-                        between an ID and a CLASS in CSS.</label>
-                    <textarea id="q2" name="q2" rows="3"
-                      placeholder="Write your short answer..."></textarea>
-                    <div class="hint-text">Mention uniqueness (#id vs .class) and reusability.</div>
-                </div>
-
-                <!-- QUESTION 3: select dropdown (combo box) with at least 3 options -->
-                <div class="question-group">
-                    <label for="q3" class="question-label">🔽 3. Which CSS property is used to
-                        change the background color of an element?</label>
-                    <select id="q3" name="q3">
-                        <option value="" selected disabled>Choose one option</option>
-                        <option value="color">color</option>
-                        <option value="bgcolor">bgcolor (HTML attribute)</option>
-                        <option value="background-color">background-color</option>
-                        <option value="background">background (shorthand)</option>
-                    </select>
-                    <div class="hint-text">Hint: it starts with "background" and includes a hyphen.
+                <!-- Question 2: How are id and class attributes selected in CSS? -->
+                <div class="question">
+                    <div class="question-text">2. How are id and class attributes selected in CSS?
                     </div>
+                    <input type="text" id="q2" name="q2" placeholder="Your answer"
+                      autocomplete="off">
+                    <div class="question-spacer"></div>
                 </div>
 
-                <!-- QUESTION 4: number type input (integer answer) -->
-                <div class="question-group">
-                    <label for="q4" class="question-label">🔢 4. How many heading levels are
-                        available in HTML? (e.g., &lt;h1&gt; to &lt;h?&gt;)</label>
-                    <input type="number" id="q4" name="q4" placeholder="Enter a number" min="1"
-                      max="10" step="1">
-                    <div class="hint-text">Enter a single integer (1–6 is valid, but we expect the
-                        standard maximum).</div>
+                <!-- Question 3: Which of the following is a valid CSS comment? (select dropdown) -->
+                <div class="question">
+                    <div class="question-text">3. Which of the following is a valid CSS comment?
+                    </div>
+                    <select id="q3" name="q3">
+                        <option value="" selected disabled>Choose One ...</option>
+                        <option value="// This is a comment">// This is a comment</option>
+                        <option value="/* This is a comment */">/* This is a comment */</option>
+                        <option value="<!-- This is a comment -->">&lt;!-- This is a comment --&gt;
+                        </option>
+                        <option value="# This is a comment"># This is a comment</option>
+                    </select>
+                    <div class="question-spacer"></div>
                 </div>
 
-                <!-- SUBMIT BUTTON with text "Submit Quiz" -->
-                <button type="submit" class="submit-btn">✅ Submit Quiz</button>
+                <!-- Question 4: margin question with CSS declaration -->
+                <div class="question">
+                    <div class="question-text">4. What is the bottom margin given this declaration?
+                    </div>
+                    <div class="code-block">
+                        margin: 10px 5px 15px;
+                    </div>
+                    <input type="text" id="q4" name="q4" placeholder="Enter bottom margin value"
+                      autocomplete="off">
+                    <div class="question-spacer"></div>
+                </div>
+
+                <!-- SUBMIT BUTTON -->
+                <button type="submit" class="submit-btn">Submit Quiz</button>
             </form>
         </div>
     </div>
 
-    <!-- Optional: small console feedback when form is submitted (no page reload) 
-     Just to show the quiz works, but does NOT break the requirement. 
-     This is extra polish and keeps user experience smooth. -->
+    <!-- Simple JS to demonstrate submission feedback (non-intrusive, preserves form validity) -->
     <script>
         (function () {
             const form = document.getElementById('quizForm');
             if (form) {
                 form.addEventListener('submit', function (event) {
-                    event.preventDefault();   // prevent actual page reload for demo purposes
-                    // Gather answers (just for friendly feedback, but does not alter core requirements)
+                    event.preventDefault();
                     const q1 = document.getElementById('q1').value.trim();
                     const q2 = document.getElementById('q2').value.trim();
                     const q3 = document.getElementById('q3').value;
-                    const q4 = document.getElementById('q4').value;
+                    const q4 = document.getElementById('q4').value.trim();
 
-                    let message = "📋 Quiz submitted!\n\n";
-                    message += `1. CSS stands for: ${q1 || "(no answer)"}\n`;
-                    message += `2. Your explanation: ${q2.substring(0, 100)}${q2.length > 100 ? '…' : (q2 ? '' : '(empty)')}\n`;
-                    message += `3. Selected property: ${q3 || "(none selected)"}\n`;
-                    message += `4. HTML heading count: ${q4 || "(not provided)"}\n\n`;
-                    message += `✅ Thanks for taking the HTML/CSS quiz!`;
-                    alert(message);
+                    let summary = "📋 Quiz submitted\n\n";
+                    summary += `1. CSS stands for: ${q1 || "(not answered)"}\n`;
+                    summary += `2. id/class selection: ${q2 || "(not answered)"}\n`;
+                    summary += `3. CSS comment: ${q3 || "(not selected)"}\n`;
+                    summary += `4. Bottom margin: ${q4 || "(not answered)"}\n\n`;
+                    summary += `✅ Your answers have been recorded.`;
+                    alert(summary);
                 });
             }
         })();
