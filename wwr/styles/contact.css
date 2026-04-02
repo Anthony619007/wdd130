@@ -1,7 +1,5 @@
-/* ============================================================
-   RAFTING.CSS - Complete styles for White Water Rafting site
-   Includes base styles, header, footer, and contact page specific layout
-   ============================================================ */
+/* RAFTING.CSS - Complete styles for White Water Rafting site */
+/* Includes base styles, header, footer, and contact page specific layout */
 
 /* ---------- RESET & BASE ---------- */
 * {
@@ -52,7 +50,7 @@ p {
     margin-bottom: 1rem;
 }
 
-/* ---------- HEADER ---------- */
+/* ---------- HEADER (Consistent across all pages) ---------- */
 header {
     display: flex;
     justify-content: space-between;
@@ -74,7 +72,7 @@ header {
     transform: scale(1.05);
 }
 
-/* Navigation */
+/* Navigation - Flex horizontal */
 nav ul {
     display: flex;
     list-style: none;
@@ -105,7 +103,7 @@ main {
     margin-bottom: 2rem;
 }
 
-/* ---------- CONTACT HERO SECTION ---------- */
+/* Contact Hero Section - matches wireframe header text */
 .contact-hero {
     text-align: center;
     background: linear-gradient(120deg, #e6f2f9 0%, #ffffff 100%);
@@ -126,7 +124,7 @@ main {
     margin: 0 auto;
 }
 
-/* ---------- COMPANY INFO & MAP ---------- */
+/* ---------- COMPANY INFO & MAP (two-column layout like wireframe) ---------- */
 .contact-info-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -166,6 +164,7 @@ main {
     text-decoration: underline;
 }
 
+/* Google Map Container - no inline border, clean styling */
 .map-container {
     background: #ffffff;
     border-radius: 20px;
@@ -184,10 +183,11 @@ main {
     height: 300px;
     border-radius: 16px;
     display: block;
+    /* border:0 is removed from inline style, controlled by CSS */
     border: none;
 }
 
-/* ---------- EMPLOYEE PROFILES ---------- */
+/* ---------- EMPLOYEE PROFILES (exactly as wireframe: three profile cards) ---------- */
 .employee-profiles {
     margin: 3rem 0;
 }
@@ -228,10 +228,9 @@ main {
 
 .profile-card img {
     width: 100%;
-    height: 280px;
+    height: 260px;
     object-fit: cover;
     display: block;
-    background-color: #d4e0e8;
 }
 
 .profile-card h3 {
@@ -254,7 +253,7 @@ main {
     color: #4a627a;
 }
 
-/* ---------- CONTACT FORM ---------- */
+/* ---------- CONTACT FORM (matches wireframe fields: Name, Email, Purpose, Message, Checkbox, Button) ---------- */
 .contact-form-section {
     background: #f8fafc;
     border-radius: 28px;
@@ -361,7 +360,7 @@ main {
     color: #2c3e50;
 }
 
-/* Submit Button */
+/* Submit Button - styled, clear text, stands out */
 .form-action {
     text-align: center;
     margin-top: 1rem;
@@ -391,7 +390,7 @@ main {
     transform: scale(0.98);
 }
 
-/* ---------- FOOTER ---------- */
+/* ---------- FOOTER (consistent across pages) ---------- */
 footer {
     background: #0b3b5f;
     border-radius: 20px 20px 0 0;
@@ -435,14 +434,7 @@ footer p {
     opacity: 0.8;
 }
 
-/* ---------- PLACEHOLDER STYLING ---------- */
-::placeholder {
-    color: #9aaebf;
-    font-style: normal;
-    opacity: 0.7;
-}
-
-/* ---------- RESPONSIVE DESIGN ---------- */
+/* ---------- RESPONSIVE DESIGN (preserves layout on tablets and mobiles) ---------- */
 @media (max-width: 850px) {
     body {
         padding: 0 15px;
@@ -516,5 +508,40 @@ footer p {
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
+    }
+}
+
+/* ---------- ADDITIONAL UTILITIES (for edge cases and wireframe accuracy) ---------- */
+/* ensure that placeholder text matches wireframe style */
+::placeholder {
+    color: #9aaebf;
+    font-style: normal;
+    opacity: 0.7;
+}
+
+/* Styling for address block to mimic wireframe card look */
+.company-details address br {
+    margin: 6px 0;
+}
+
+/* map embed border removal fallback */
+iframe[src*="google.com/maps"] {
+    border: 0 !important;
+}
+
+/* Ensure employee profile images have consistent background fallback */
+.profile-card img {
+    background-color: #eef2f5;
+}
+
+/* contact form fieldset appearance */
+fieldset {
+    border: none;
+}
+
+/* make sure the form and employee section look like the wireframe (three columns) */
+@media (min-width: 1000px) {
+    .profiles-container {
+        gap: 2rem;
     }
 }
