@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Wild Waters Rafting – Get in Touch</title>
     <meta name="description"
-      content="Have questions about rafting trips, reservations, or our adventures? Contact Wild Waters Rafting by phone, email, or our convenient online form. We're here to help!">
+      content="Whether you're planning an adventure, have a question, or just want to say hello — we would love to hear from you.">
     <meta name="author" content="Anthony Anusiem">
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
@@ -106,19 +106,25 @@
 
                 <fieldset class="purpose-group">
                     <legend>Message Purpose</legend>
-                    <label class="radio-label">
-                        <input type="radio" name="message-purpose" value="General Inquiry" required>
-                        General Inquiry
+
+                    <label class="radio-label" for="purpose-general">
+                        <input type="radio" id="purpose-general" name="message-purpose"
+                          value="General Inquiry" required> General Inquiry
                     </label>
-                    <label class="radio-label">
-                        <input type="radio" name="message-purpose" value="Reservation Question">
-                        Reservation Question
+
+
+                    <label class="radio-label" for="purpose-reservation">
+                        <input type="radio" id="purpose-reservation" name="message-purpose"
+                          value="Reservation Question"> Reservation Question
                     </label>
-                    <label class="radio-label">
-                        <input type="radio" name="message-purpose" value="Website Suggestion">
-                        Website Suggestion
+
+
+                    <label class="radio-label" for="purpose-suggestion">
+                        <input type="radio" id="purpose-suggestion" name="message-purpose"
+                          value="Website Suggestion"> Website Suggestion
                     </label>
                 </fieldset>
+
 
                 <div class="form-group">
                     <label for="user-message">Your Message</label>
