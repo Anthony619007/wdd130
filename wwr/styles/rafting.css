@@ -563,3 +563,273 @@ footer p {
         text-align: center;
     }
 }
+
+/* ====================== ABOUT PAGE - NEW SECTIONS STYLES ====================== */
+
+/* 1. Large full-width hero with absolute positioned heading */
+.hero-full {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    border-radius: 24px;
+    margin: 3rem 0 4rem 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* Prevents image from touching edges */
+}
+
+.hero-full img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 18px;
+    /* Nice rounded corners so image doesn't touch edges */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 15%;
+    /* Moved to the top of the image */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.8);
+    width: 85%;
+    max-width: 760px;
+    z-index: 2;
+    background: rgba(11, 59, 95, 0.65);
+    /* Nice semi-transparent dark overlay for better readability */
+    padding: 25px 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.hero-overlay h2 {
+    font-size: 3.6rem;
+    margin: 0 0 0.8rem 0;
+    line-height: 1.05;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+
+.hero-overlay p {
+    font-size: 1.55rem;
+    margin: 0;
+    font-weight: 300;
+    color: #ffe8c4;
+}
+
+/* 4. Purpose & Offerings - CSS Grid with good spacing */
+.purpose-offerings {
+    margin: 4rem 0;
+    padding: 3.5rem 2.5rem;
+    background: #f8f9fa;
+    border-radius: 24px;
+}
+
+.purpose-offerings h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    color: var(--secondary-color);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-8px);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.grid-item .content {
+    padding: 1.8rem 1.6rem;
+}
+
+.grid-item h3 {
+    font-size: 1.55rem;
+    margin-bottom: 0.9rem;
+    color: var(--secondary-color);
+}
+
+.grid-item p {
+    line-height: 1.7;
+    color: #444;
+}
+
+/* 3. Call to Action Section */
+.cta-section {
+    margin: 4rem 0;
+    padding: 4.5rem 2.5rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--secondary-color), #1b5a7a);
+    color: white;
+    border-radius: 24px;
+}
+
+.cta-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    border: none;
+    color: white;
+}
+
+.cta-section p {
+    font-size: 1.25rem;
+    max-width: 720px;
+    margin: 0 auto 2.5rem;
+    opacity: 0.95;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 1.25rem 3.2rem;
+    font-size: 1.35rem;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 22px rgba(175, 73, 8, 0.35);
+}
+
+.cta-button:hover {
+    background-color: #c55a1a;
+    transform: scale(1.05);
+    box-shadow: 0 12px 28px rgba(175, 73, 8, 0.45);
+}
+
+/* 2. Newsletter Sign-up Form */
+.newsletter {
+    margin: 5rem auto;
+    max-width: 720px;
+    padding: 3.5rem 2.8rem;
+    background: #f8f9fa;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+.newsletter h2 {
+    font-size: 2.4rem;
+    margin-bottom: 0.8rem;
+    color: var(--secondary-color);
+}
+
+.newsletter p {
+    font-size: 1.15rem;
+    margin-bottom: 2.8rem;
+    color: #555;
+}
+
+.newsletter-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 1.2rem;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+    font-size: 1.02rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--accent1-color);
+    outline: none;
+}
+
+/* Newsletter submit button */
+.newsletter .submit-btn {
+    background: linear-gradient(95deg, var(--accent1-color), #ff6b2c);
+    color: var(--white);
+    border: none;
+    padding: 0 2.8rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    align-self: end;
+    height: 52px;
+}
+
+.newsletter .submit-btn:hover {
+    background: linear-gradient(95deg, #ff6b2c, #e55a1a);
+    transform: scale(1.02);
+}
+
+/* Responsive adjustments for the new sections */
+@media (max-width: 768px) {
+    .hero-full {
+        height: 420px;
+        padding: 15px;
+    }
+
+    .hero-overlay {
+        top: 18%;
+        padding: 20px 25px;
+    }
+
+    .hero-overlay h2 {
+        font-size: 2.8rem;
+    }
+
+    .hero-overlay p {
+        font-size: 1.3rem;
+    }
+
+    .newsletter-form {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter .submit-btn {
+        height: auto;
+        padding: 14px 2rem;
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
