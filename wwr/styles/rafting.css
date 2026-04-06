@@ -833,3 +833,259 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+
+/* ====================== TRIPS PAGE STYLES ====================== */
+
+/* Trips Hero Section */
+.trips-hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 24px;
+    margin-bottom: 3rem;
+    margin-top: 0;
+}
+
+.trips-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.trips-hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.8);
+    width: 85%;
+    max-width: 760px;
+    z-index: 2;
+    background: rgba(11, 59, 95, 0.75);
+    padding: 25px 40px;
+    border-radius: 16px;
+}
+
+.trips-hero-overlay h1 {
+    font-size: 3rem;
+    margin: 0 0 0.5rem 0;
+    color: white;
+}
+
+.trips-hero-overlay p {
+    font-size: 1.3rem;
+    margin: 0;
+    color: #ffe8c4;
+}
+
+/* Trips Call to Action Section */
+.trips-cta {
+    text-align: center;
+    background: linear-gradient(135deg, var(--secondary-color), #1b5a7a);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 24px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.trips-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border: none;
+    color: white;
+    display: block;
+}
+
+.trips-cta p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    opacity: 0.95;
+}
+
+/* Featured Trip Descriptions */
+.trip-descriptions {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.trip-descriptions h2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.trip-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.trip-info {
+    padding: 1.5rem;
+}
+
+.trip-info h3 {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+    color: var(--secondary-color);
+}
+
+.trip-level {
+    font-weight: 700;
+    color: var(--accent1-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.trip-info p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.trip-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+.trip-info ul li {
+    padding: 0.25rem 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* All Trips Table Section */
+.trips-table-section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    overflow-x: auto;
+}
+
+.trips-table-section h2 {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.trips-table th,
+.trips-table td {
+    border: 1px solid #e0e0e0;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.trips-table th {
+    background: linear-gradient(135deg, var(--secondary-color), #1b5a7a);
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.trips-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.trips-table tr:hover {
+    background-color: #f0f4f8;
+}
+
+/* Responsive adjustments for trips page */
+@media (max-width: 768px) {
+    .trips-hero {
+        height: 300px;
+        margin-bottom: 2rem;
+    }
+
+    .trips-hero-overlay {
+        padding: 15px 25px;
+        width: 90%;
+    }
+
+    .trips-hero-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .trips-hero-overlay p {
+        font-size: 1rem;
+    }
+
+    .trip-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .trips-table th,
+    .trips-table td {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+
+    .trips-cta {
+        padding: 2rem 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .trips-cta h2 {
+        font-size: 1.5rem;
+    }
+
+    .trip-descriptions {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .trips-table-section {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .trips-table th,
+    .trips-table td {
+        padding: 6px 8px;
+        font-size: 0.75rem;
+    }
+}
