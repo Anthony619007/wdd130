@@ -100,7 +100,6 @@ nav ul li a:hover {
     color: #ffd966;
 }
 
-/* Hero section (similar to about.html structure) */
 .hero {
     position: relative;
     width: 100%;
@@ -184,7 +183,6 @@ nav ul li a:hover {
     line-height: 1.5;
 }
 
-/* History section (improved layout like about.html but with grid) */
 .history {
     background: white;
     padding: 4rem 2rem;
@@ -221,7 +219,6 @@ nav ul li a:hover {
     transform: scale(1.02);
 }
 
-/* Adventure gallery: exactly like about.html’s .adventures style, but renamed */
 .adventure {
     background: #eef4fa;
     padding: 3rem 2rem 4rem;
@@ -267,7 +264,6 @@ nav ul li a:hover {
     font-size: 1rem;
 }
 
-/* Extra sections to mirror about.html: hero-full, purpose-offerings, cta, newsletter */
 .hero-full {
     position: relative;
     margin: 3rem 0;
