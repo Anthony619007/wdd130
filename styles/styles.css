@@ -26,7 +26,7 @@ nav {
     background-color: steelblue;
     padding: 1rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -63,6 +63,8 @@ main {
     grid-column: 2/3;
     margin: 1rem;
     text-align: justify;
+    width: auto;
+    max-width: 100%;
 }
 
 main img {
@@ -146,15 +148,19 @@ ul.box a:hover {
 
     main {
         grid-column: 1/2;
+        width: auto;
     }
 
     nav {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         gap: 10px;
+        flex-wrap: wrap;
     }
 
     nav a {
-        width: 100%;
+        width: auto;
         text-align: center;
+        flex: 1;
     }
 }
