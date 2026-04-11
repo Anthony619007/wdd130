@@ -36,11 +36,12 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid var(--accent1-color);
     display: inline-block;
+    text-align: center;
 }
 
 h3 {
@@ -51,6 +52,7 @@ h3 {
 
 p {
     margin-bottom: 1rem;
+    font-size: medium;
 }
 
 img {
@@ -62,28 +64,29 @@ main,
 footer {
     max-width: 1000px;
     margin: 0 auto;
+    . font-size: medium;
 }
 
 header {
     display: grid;
-    grid-template-columns: 150px auto;
+    grid-template-columns: 200px auto;
     align-items: center;
     background: linear-gradient(135deg, #0b3b5f 0%, #1b5a7a 100%);
-    padding: 0.75rem 2rem;
+    padding: 1.75rem 3rem;
     border-radius: 0 0 20px 20px;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .logo-container img {
-    width: 80px;
+    width: 100px;
     height: auto;
     transition: transform 0.3s ease;
     border-radius: 50%;
 }
 
 .logo-container img:hover {
-    transform: scale(1.05);
+    transform: scale(2.05);
 }
 
 nav ul {
@@ -127,7 +130,7 @@ main {
     top: 1em;
     width: 100%;
     background-color: #f4f4f498;
-    text-align: center;
+    text-align: center
 }
 
 .hero article {
@@ -453,12 +456,15 @@ footer {
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 1rem;
+    font-size: medium;
+    text-align: center;
 }
 
 footer p {
     color: #eef4ff;
     margin: 0;
-    font-size: 0.9rem;
+    font-size: medium;
+    text-align: center;
 }
 
 .socialmedia {
@@ -524,6 +530,7 @@ footer p {
     footer {
         flex-direction: column;
         text-align: center;
+        font-size: medium;
     }
 
     .radio-label {
